@@ -1,0 +1,18 @@
+i: 0 # target wiget i
+p: Container # rendering primitive
+s:
+  background: 0x333333
+  color: 0xEEEEEE
+c:
+  i: 1
+  p: Column
+  cn:
+    - i: 2
+      p: Text
+      text: "0"
+    - i: 3
+      p: TapAction
+      c:
+        i: 4
+        p: Text
+        text: increment
