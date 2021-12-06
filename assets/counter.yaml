@@ -1,18 +1,28 @@
-i: 0 # target wiget i
-p: Container # rendering primitive
-s:
-  background: 0x333333
-  color: 0xEEEEEE
-c:
-  i: 1
-  p: Column
-  cn:
-    - i: 2
-      p: Text
-      text: "0"
-    - i: 3
-      p: TapAction
-      c:
-        i: 4
-        p: Text
-        text: increment
+changed:
+  - # widget id
+    i: 0
+    # rendering primitive
+    p: container
+    s: # style
+      background: 0xFF333333
+      color: 0xFFEEEEEE
+    c: # child
+      i: 1
+      p: column
+      mainAxis: center
+      cn: #children
+        - i: 2
+          p: text
+          text: "0"
+          s:
+            fontSize: 18.0
+            color: 0xFFEEEEEE
+        - i: 3
+          p: action
+          c:
+            i: 4
+            p: text
+            text: increment
+            s:
+              fontSize: 18.0
+              color: 0xFFEEEEEE
