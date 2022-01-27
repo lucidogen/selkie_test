@@ -16,4 +16,9 @@ class Style {
   Color get color {
     return Color(data['color']);
   }
+
+  BoxDecoration get decoration{
+
+    return BoxDecoration();
+  }
 }

@@ -2,6 +2,7 @@ import 'dart:convert';
 
 import 'package:flutter/material.dart';
 import 'package:selkie_test/app.dart';
+import 'package:selkie_test/selkie/primitives/s_row.dart';
 
 import './selkie_widget.dart';
 import './primitives/s_column.dart';
@@ -58,6 +59,8 @@ class Selkie {
         return SText(selkie: this, layout: layout);
       case 'widget':
         return SWidget(selkie: this, layout: layout);
+      case 'row':
+        return SRow(selkie: this, layout: layout);
       default:
         return Text("Invalid primitive '${layout.primitive}'");
     }
