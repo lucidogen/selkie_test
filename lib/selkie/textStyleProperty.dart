@@ -5,5 +5,5 @@ class TextStyleProperty{
 
   const TextStyleProperty(this.data);
 
-
+//changes to text style property
 }
